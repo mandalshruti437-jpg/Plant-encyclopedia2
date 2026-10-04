@@ -1,0 +1,398 @@
+/* =================================
+   REGISTRATION PAGE
+================================= */
+
+.registration-page {
+  min-height: 100vh;
+  padding: 45px 20px;
+  background: linear-gradient(
+    135deg,
+    #e8f5e9,
+    #f1f8e9,
+    #ffffff
+  );
+
+  color: #222;
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.registration-page h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.registration-page > p {
+  text-align: center;
+  color: #555 !important;
+  font-size: 16px;
+  margin: 0 0 25px;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.registration-page form {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+
+  padding: 35px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   LABEL
+================================= */
+
+.registration-page label {
+  display: block;
+
+  color: #222 !important;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+
+/* =================================
+   INPUT + SELECT
+================================= */
+
+.registration-page input,
+.registration-page select {
+  width: 100%;
+
+  min-height: 46px;
+
+  padding: 10px 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d4d4d4;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #222 !important;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+
+/* =================================
+   PLACEHOLDER
+================================= */
+
+.registration-page input::placeholder {
+  color: #888 !important;
+  opacity: 1;
+}
+
+
+/* =================================
+   INPUT FOCUS
+================================= */
+
+.registration-page input:focus,
+.registration-page select:focus {
+  border-color: #43a047;
+
+  box-shadow:
+    0 0 0 3px rgba(67, 160, 71, 0.12);
+}
+
+
+/* =================================
+   SELECT
+================================= */
+
+.registration-page select {
+  cursor: pointer;
+}
+
+
+/* =================================
+   ALL FORM TEXT
+================================= */
+
+.registration-page form {
+  color: #222;
+}
+
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+
+.registration-page form p {
+  color: #555;
+  font-size: 13px;
+}
+
+
+/* React Hook Form errors */
+
+.registration-page form > div > p {
+  color: #d32f2f;
+}
+
+
+/* =================================
+   PASSWORD BOX
+================================= */
+
+.password-input,
+.special-id-input {
+  position: relative;
+  width: 100%;
+}
+
+
+/* Input ke andar eye ke liye space */
+
+.password-input input,
+.special-id-input input {
+  padding-right: 55px;
+}
+
+
+/* =================================
+   EYE BUTTON
+================================= */
+
+.password-toggle {
+  position: absolute;
+
+  right: 8px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 38px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border: none !important;
+
+  background: transparent !important;
+
+  color: #555 !important;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: none !important;
+
+  z-index: 5;
+}
+
+
+/* Eye hover */
+
+.password-toggle:hover {
+  background: #eeeeee !important;
+
+  border-radius: 50%;
+}
+
+
+/* =================================
+   ADMIN ACCESS BOX
+================================= */
+
+.admin-access-box {
+  background: linear-gradient(
+    135deg,
+    #f7fff7,
+    #ffffff
+  );
+
+  border: 1px solid #b7d9b9 !important;
+
+  box-shadow:
+    0 4px 12px rgba(46, 125, 50, 0.08);
+
+  color: #333;
+}
+
+
+/* Admin heading */
+
+.admin-access-box h3 {
+  color: #2e7d32 !important;
+
+  font-size: 20px;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+/* Admin normal text */
+
+.admin-access-box p {
+  color: #444 !important;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* Student warning */
+
+.admin-access-box p[style*="red"] {
+  color: #d32f2f !important;
+}
+
+
+/* =================================
+   WHATSAPP BUTTON
+================================= */
+
+.whatsapp-button {
+  transition: 0.3s;
+
+  font-weight: 600;
+
+  color: white !important;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(37, 211, 102, 0.25);
+}
+
+
+/* =================================
+   SIGN UP BUTTON
+================================= */
+
+.registration-page form > button[type="submit"] {
+  width: 100%;
+
+  min-height: 48px;
+
+  margin-top: 10px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #2e7d32,
+    #43a047
+  );
+
+  color: white !important;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.registration-page form > button[type="submit"]:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(46, 125, 50, 0.25);
+}
+
+
+/* =================================
+   LOGIN TEXT
+================================= */
+
+.registration-page form > p:last-child {
+  text-align: center;
+
+  color: #555 !important;
+
+  font-size: 14px;
+
+  margin-top: 20px;
+}
+
+
+.registration-page form > p:last-child a {
+  color: #2e7d32 !important;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.registration-page form > p:last-child a:hover {
+  text-decoration: underline;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  .registration-page {
+    padding: 25px 12px;
+  }
+
+  .registration-page form {
+    padding: 25px 18px;
+  }
+
+  .registration-page h2 {
+    font-size: 26px;
+  }
+
+  .registration-page input,
+  .registration-page select {
+    font-size: 14px;
+  }
+
+}

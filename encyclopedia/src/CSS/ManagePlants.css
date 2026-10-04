@@ -1,0 +1,289 @@
+/* =====================================================
+   MANAGE PLANTS PAGE
+===================================================== */
+
+.container {
+  max-width: 1400px;
+}
+
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.container h2 {
+  font-weight: 700;
+  color: #198754;
+  margin-top: 20px;
+}
+
+
+/* =====================================================
+   ADD / EDIT FORM CARD
+===================================================== */
+
+.card.shadow {
+  border: none;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10) !important;
+}
+
+.card.shadow h4 {
+  color: #198754;
+  font-weight: 600;
+  border-bottom: 2px solid #e9f5ee;
+  padding-bottom: 12px;
+}
+
+
+/* =====================================================
+   FORM LABEL
+===================================================== */
+
+.form-label {
+  font-weight: 600;
+  color: #343a40;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px 13px;
+  transition: 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.20rem rgba(25, 135, 84, 0.15);
+}
+
+
+/* Textarea */
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 110px;
+}
+
+
+/* =====================================================
+   ADD / UPDATE BUTTON
+===================================================== */
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+  border-radius: 7px;
+  padding: 9px 20px;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+  border-color: #146c43;
+}
+
+
+/* =====================================================
+   CANCEL BUTTON
+===================================================== */
+
+.btn-secondary {
+  border-radius: 7px;
+  padding: 9px 20px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   SEARCH BOX
+===================================================== */
+
+.mb-3 input[placeholder="Search plant..."] {
+  height: 48px;
+  border-radius: 25px;
+  padding-left: 45px;
+  padding-right: 20px;
+  font-size: 15px;
+  background-color: #ffffff;
+
+  /* Magnifying glass icon */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23198754' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'%3E%3C/circle%3E%3Cline x1='16.65' y1='16.65' x2='21' y2='21'%3E%3C/line%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 20px;
+}
+
+.mb-3 input[placeholder="Search plant..."]:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.20rem rgba(25, 135, 84, 0.15);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-responsive {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.table {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.table thead th {
+  background-color: #212529;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 12px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+/* =====================================================
+   TABLE BODY
+===================================================== */
+
+.table tbody td {
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+  color: #343a40;
+}
+
+
+/* Row hover */
+
+.table-hover tbody tr:hover {
+  background-color: #f1f8f4;
+}
+
+
+/* =====================================================
+   PLANT IMAGE
+===================================================== */
+
+.table tbody img {
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #dee2e6;
+  transition: 0.3s ease;
+}
+
+.table tbody img:hover {
+  transform: scale(1.08);
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.table .btn-primary {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.table .btn-danger {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.table tbody td:nth-child(8) {
+  min-width: 250px;
+  max-width: 350px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+/* =====================================================
+   NO PLANTS FOUND
+===================================================== */
+
+.table tbody td[colspan="9"] {
+  padding: 30px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .card.shadow {
+    padding: 20px !important;
+  }
+
+  .container h2 {
+    font-size: 26px;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 9px;
+  }
+
+  .table tbody img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+  .container h2 {
+    font-size: 23px;
+  }
+
+  .card.shadow h4 {
+    font-size: 20px;
+  }
+
+  .btn-success,
+  .btn-secondary {
+    padding: 8px 14px;
+  }
+
+}

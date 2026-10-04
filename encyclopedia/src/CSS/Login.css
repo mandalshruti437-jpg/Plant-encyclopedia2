@@ -1,0 +1,102 @@
+/* ===============================
+   Login Card
+================================ */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.card h2 {
+  color: #198754;
+  font-weight: 700;
+}
+
+/* ===============================
+   Form Labels
+================================ */
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===============================
+   Inputs
+================================ */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+/* Password toggle button ko input ke sath align rakhna */
+.input-group .btn-outline-secondary {
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+/* ===============================
+   Login Button
+================================ */
+.btn-success {
+  background-color: #198754;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+  transform: translateY(-2px);
+}
+
+.btn-success:disabled {
+  background-color: #a3c9b7;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   Error Message
+================================ */
+.alert-danger {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.text-danger {
+  font-size: 13px;
+}
+
+/* ===============================
+   Registration Link
+================================ */
+.card a {
+  color: #198754;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   Mobile Responsive
+================================ */
+@media (max-width: 576px) {
+  .card {
+    padding: 20px !important;
+  }
+}

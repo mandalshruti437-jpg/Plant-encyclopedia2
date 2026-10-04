@@ -1,0 +1,192 @@
+.user-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-bottom: 0 !important;
+
+  background-color: transparent;
+}
+
+/* Welcome section */
+.welcome-section {
+  padding: 70px 20px 50px;
+  margin: 0;
+}
+
+.welcome-section h1 {
+  color: #146c43;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  max-width: 850px;
+  margin: 0 auto 30px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Explore Button */
+.explore-btn {
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+.explore-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* Features */
+.features-section {
+  padding: 20px 20px 30px;
+  margin-bottom: 0 !important;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  min-height: 160px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.feature-box h3 {
+  color: #198754;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  color: #555;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Modal */
+.plant-modal {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.plant-modal .modal-content {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.plant-modal .modal-header {
+  background: #198754;
+  color: white;
+}
+
+.plant-modal .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* Plant Cards */
+.plant-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  transition: 0.3s;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18) !important;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.plant-card .card-body {
+  padding: 22px;
+}
+
+.plant-card .card-title {
+  color: #198754;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.scientific-name {
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.view-details-btn {
+  border-radius: 25px;
+  padding: 8px 22px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.view-details-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Modal Body */
+.plant-modal .modal-body {
+  background: #f7faf7;
+  padding: 25px;
+}
+
+/* Modal Footer */
+.plant-modal .modal-footer {
+  border-top: 1px solid #eee;
+}
+
+/* Remove page gap */
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .welcome-section {
+    padding: 45px 15px 35px;
+  }
+
+  .welcome-section h1 {
+    font-size: 29px;
+  }
+
+  .welcome-section p {
+    font-size: 15px;
+  }
+
+  .feature-box {
+    margin-bottom: 20px;
+  }
+
+  .plant-modal .modal-dialog {
+    margin: 12px;
+  }
+}

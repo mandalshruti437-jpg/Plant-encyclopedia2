@@ -1,0 +1,98 @@
+.admin-footer {
+  background: #212529;
+  color: white;
+  padding: 45px 0 20px;
+  margin-top: 50px;
+}
+
+.admin-footer-brand {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-brand-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.admin-footer-text {
+  color: #adb5bd;
+  margin-top: 15px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.admin-footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.admin-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-footer-links a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.admin-footer-links a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.admin-footer p {
+  color: #adb5bd;
+  line-height: 1.6;
+}
+
+.admin-footer hr {
+  border-color: #495057;
+  margin: 30px 0 20px;
+}
+
+.admin-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .admin-footer {
+    text-align: center;
+  }
+
+  .admin-footer-brand {
+    justify-content: center;
+  }
+
+  .admin-footer-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .admin-footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}

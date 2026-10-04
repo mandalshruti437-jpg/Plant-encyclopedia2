@@ -1,0 +1,258 @@
+.feedback-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef8f0, #f8fbf8);
+  padding: 60px 20px;
+}
+
+/* Main Container */
+.feedback-container {
+  max-width: 950px;
+  margin: auto;
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(25, 135, 84, 0.12);
+}
+
+/* Header */
+.feedback-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feedback-header h1 {
+  color: #146c43;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.feedback-header p {
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+/* Sections */
+.feedback-section {
+  margin-bottom: 25px;
+  padding: 30px;
+  border: none;
+  border-left: 5px solid #198754;
+  border-radius: 12px;
+  background: #f8fbf8;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.feedback-section h2 {
+  color: #146c43;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.feedback-section p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Radio Options */
+.option-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.option-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 15px;
+  background: #ffffff;
+  border: 1px solid #dce9df;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.2s ease;
+}
+
+.option-list label:hover {
+  border-color: #198754;
+  background: #f0f8f2;
+  transform: translateY(-1px);
+}
+
+.option-list input {
+  width: auto;
+  accent-color: #198754;
+}
+
+/* Rating */
+.rating-group {
+  margin-top: 25px;
+}
+
+.rating-group > label {
+  display: block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.rating-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rating-options label {
+  padding: 10px 15px;
+  border: 1px solid #dce9df;
+  border-radius: 9px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.rating-options label:hover {
+  border-color: #198754;
+  background: #f0f8f2;
+}
+
+.rating-options input {
+  margin-right: 6px;
+  accent-color: #198754;
+}
+
+/* Labels */
+.feedback-section > label {
+  display: block;
+  color: #343a40;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+.feedback-section input[type="text"],
+.feedback-section input[type="email"],
+.feedback-section select,
+.feedback-section textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.feedback-section input[type="text"]:focus,
+.feedback-section input[type="email"]:focus,
+.feedback-section select:focus,
+.feedback-section textarea:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1);
+}
+
+.feedback-section textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Checkbox */
+.checkbox-option {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: normal !important;
+  line-height: 1.5;
+}
+
+.checkbox-option input {
+  width: auto;
+  margin-top: 4px;
+  accent-color: #198754;
+}
+
+/* Submit Button */
+.submit-area {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.feedback-submit {
+  background: #198754;
+  color: #ffffff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.2);
+}
+
+.feedback-submit:hover {
+  background: #146c43;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 135, 84, 0.25);
+}
+
+/* Success Message */
+.success-message {
+  background: #dff3e7;
+  color: #146c43;
+  border: 1px solid #b8dfc8;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  .feedback-page {
+    padding: 30px 12px;
+  }
+
+  .feedback-container {
+    padding: 25px 18px;
+    border-radius: 15px;
+  }
+
+  .feedback-header h1 {
+    font-size: 28px;
+  }
+
+  .feedback-section {
+    padding: 20px;
+  }
+
+  .option-list {
+    grid-template-columns: 1fr;
+  }
+
+  .rating-options {
+    flex-direction: column;
+  }
+
+  .rating-options label {
+    width: 100%;
+  }
+
+  .feedback-submit {
+    width: 100%;
+  }
+}
+
+
+

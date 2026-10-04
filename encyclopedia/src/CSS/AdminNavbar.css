@@ -1,0 +1,138 @@
+/* ================================
+   ADMIN NAVBAR
+================================ */
+
+.admin-navbar {
+  background-color: #212529;
+  padding: 10px 0;
+}
+
+/* ================================
+   CONTAINER
+================================ */
+
+.admin-navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   BRAND
+================================ */
+
+.admin-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.admin-navbar .navbar-brand:hover {
+  color: #ffffff;
+}
+
+/* ================================
+   NAV LINKS
+================================ */
+
+.admin-navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admin-navbar .nav-link {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+/* ================================
+   NAV LINK HOVER
+================================ */
+
+.admin-navbar .nav-link:hover {
+  color: #ffffff;
+  background-color: #343a40;
+}
+
+/* ================================
+   ACTIVE / FOCUS
+================================ */
+
+.admin-navbar .nav-link:focus {
+  color: #ffffff;
+}
+
+/* ================================
+   LOGOUT BUTTON
+================================ */
+
+.admin-navbar .btn-danger {
+  font-size: 15px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+  .admin-navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-navbar .navbar-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .admin-navbar .nav-link {
+    margin: 2px;
+  }
+
+  .admin-navbar .btn-danger {
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+  .admin-navbar {
+    padding: 12px 0;
+  }
+
+  .admin-navbar .navbar-brand {
+    font-size: 20px;
+  }
+
+  .admin-navbar .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .admin-navbar .nav-link {
+    width: 100%;
+    padding: 9px 12px;
+  }
+
+  .admin-navbar .btn-danger {
+    width: 100%;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,296 @@
+/* =========================================
+   PLANTS PAGE
+========================================= */
+
+.container.py-5 {
+  max-width: 1200px;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.container.py-5 > h1 {
+  color: #146c43;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-align: center;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   ALPHABET SECTION
+========================================= */
+
+.row.g-2.my-4 {
+  background: rgba(240, 248, 242, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Alphabet buttons */
+
+.row.g-2.my-4 button {
+  height: 45px;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+
+/* Alphabet hover */
+
+.row.g-2.my-4 button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(25, 135, 84, 0.25);
+}
+
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.input-group.mb-4 {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+
+/* Search input */
+
+.input-group .form-control {
+  height: 48px;
+  border: 2px solid #198754;
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  box-shadow: none;
+}
+
+
+/* Search input focus */
+
+.input-group .form-control:focus {
+  border-color: #146c43;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.15);
+}
+
+
+/* Search button */
+
+.input-group .btn-success {
+  min-width: 55px;
+  border-radius: 0 10px 10px 0;
+  font-size: 18px;
+}
+
+
+/* =========================================
+   RESULT HEADING
+========================================= */
+
+.container.py-5 > h2 {
+  color: #146c43;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   PLANT CARDS
+========================================= */
+
+.row.mt-3 .card {
+  border: none;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 230px;
+}
+
+
+/* Card hover */
+
+.row.mt-3 .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.row.mt-3 .card-body {
+  padding: 25px;
+}
+
+
+/* Plant Name */
+
+.row.mt-3 .card-body h4 {
+  color: #198754;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+
+/* Card paragraph */
+
+.row.mt-3 .card-body p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+/* Bold labels */
+
+.row.mt-3 .card-body p b {
+  color: #333;
+}
+
+
+/* Scientific name */
+
+.row.mt-3 .card-body p i {
+  color: #777;
+}
+
+
+/* =========================================
+   VIEW DETAILS BUTTON
+========================================= */
+
+
+.row.mt-3 .card-body .btn-success {
+  margin-top: 10px;
+  padding: 9px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff !important;
+  background-color: #198754;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+
+.row.mt-3 .card-body .btn-success:hover {
+  background-color: #146c43;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(25, 135, 84, 0.3);
+}
+
+/* Button focus (click ke baad blue ring hata di) */
+
+.row.mt-3 .card-body .btn-success:focus,
+.row.mt-3 .card-body .btn-success:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================
+   NO PLANT FOUND
+========================================= */
+
+.row.mt-3 .alert-warning {
+  border: none;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+
+/* =========================================
+   PAGE BACKGROUND
+========================================= */
+
+body {
+  background: #f5f9f4;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .container.py-5 {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
+  .container.py-5 > h1 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  .row.g-2.my-4 {
+    padding: 15px 10px;
+  }
+
+  .row.g-2.my-4 button {
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .container.py-5 > h2 {
+    font-size: 23px;
+  }
+
+  .row.mt-3 .card-body {
+    padding: 22px;
+  }
+
+  .row.mt-3 .card-body h4 {
+    font-size: 21px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .container.py-5 > h1 {
+    font-size: 24px;
+  }
+
+  .input-group.mb-4 {
+    margin-top: 20px;
+  }
+
+  .input-group .form-control {
+    font-size: 14px;
+  }
+
+  .container.py-5 > h2 {
+    font-size: 20px;
+  }
+
+}

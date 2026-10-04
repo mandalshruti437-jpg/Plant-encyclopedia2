@@ -1,0 +1,254 @@
+/* =========================================
+   PLANT DETAILS PAGE
+========================================= */
+
+.plant-details-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #ffffff, #f1f8e9);
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.plant-details-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: #ffffff;
+  border: none;
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+.plant-details-card:hover {
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.plant-details-image {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.plant-details-image:hover {
+  transform: scale(1.04);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.plant-details-content {
+  padding: 40px;
+}
+
+.plant-details-content h1 {
+  margin: 0 0 15px;
+
+  color: #2e7d32 !important;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.plant-details-content hr {
+  margin: 20px 0;
+
+  border: 0;
+  border-top: 2px solid #d8ead9;
+
+  opacity: 1;
+}
+
+/* =========================================
+   PLANT INFORMATION
+========================================= */
+
+.plant-info {
+  margin: 14px 0;
+  padding: 13px 16px;
+
+  background: #f7fbf7;
+
+  border-left: 4px solid #43a047;
+  border-radius: 8px;
+
+  color: #444 !important;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.plant-info strong {
+  color: #2e7d32 !important;
+  font-weight: 700;
+}
+
+.plant-info i {
+  color: #555 !important;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.plant-description {
+  line-height: 1.8;
+  text-align: justify;
+
+  color: #555 !important;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.plant-back-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  padding: 12px 25px;
+
+  background: #2e7d32 !important;
+  color: #ffffff !important;
+
+  border: none !important;
+  border-radius: 9px;
+
+  font-size: 16px !important;
+  font-weight: 600 !important;
+
+  line-height: 1.5;
+
+  text-decoration: none !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.plant-back-btn:hover {
+  background: #1b5e20 !important;
+
+  color: #ffffff !important;
+
+  text-decoration: none !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 18px rgba(46, 125, 50, 0.3);
+}
+
+/* =========================================
+   NOT FOUND
+========================================= */
+
+.plant-not-found {
+  min-height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.plant-not-found h2 {
+  color: #2e7d32 !important;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .plant-details-page {
+    padding: 25px 12px;
+  }
+
+  .plant-details-card {
+    border-radius: 16px;
+  }
+
+  .plant-details-image {
+    min-height: 300px;
+    max-height: 380px;
+  }
+
+  .plant-details-content {
+    padding: 25px 20px;
+  }
+
+  .plant-details-content h1 {
+    font-size: 30px;
+  }
+
+  .plant-info {
+    font-size: 14px;
+    padding: 11px 13px;
+  }
+
+  .plant-back-btn {
+    width: 100%;
+    padding: 12px 18px;
+
+    font-size: 15px !important;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .plant-details-page {
+    padding: 15px 8px;
+  }
+
+  .plant-details-content {
+    padding: 20px 15px;
+  }
+
+  .plant-details-content h1 {
+    font-size: 26px;
+  }
+
+  .plant-details-image {
+    min-height: 250px;
+  }
+}

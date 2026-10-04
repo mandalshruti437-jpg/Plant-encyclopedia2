@@ -1,0 +1,209 @@
+/* =================================
+   MAIN FOOTER
+================================= */
+
+footer {
+  background: #1f2428 !important;
+  color: #ffffff;
+  margin-top: 0 !important;
+  width: 100%;
+}
+
+
+/* =================================
+   FOOTER CONTAINER
+================================= */
+
+footer .container {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+
+/* =================================
+   FOOTER HEADINGS
+================================= */
+
+footer h4 {
+  color: #20c997 !important;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+footer h5 {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+footer p {
+  color: #dddddd;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+
+/* =================================
+   QUICK LINKS
+================================= */
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 12px !important;
+}
+
+
+/* Quick link text */
+
+footer ul li a {
+  color: #ffffff !important;
+  font-size: 16px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+
+/* Quick link hover */
+
+footer ul li a:hover {
+  color: #20c997 !important;
+  padding-left: 6px;
+}
+
+
+/* =================================
+   PROJECT INFORMATION
+================================= */
+
+footer .col-md-4 p {
+  transition: all 0.3s ease;
+}
+
+footer .col-md-4 p:hover {
+  color: #20c997;
+  transform: translateX(5px);
+}
+
+
+/* =================================
+   COPYRIGHT SECTION
+================================= */
+
+footer .border-top {
+  border-color: #444 !important;
+}
+
+footer .border-top .container {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+
+/* Copyright */
+
+footer .border-top p {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 5px !important;
+}
+
+
+/* Small text */
+
+footer .border-top small {
+  color: #999 !important;
+  font-size: 13px;
+}
+
+
+/* =================================
+   FOOTER HOVER EFFECT
+================================= */
+
+footer h4:hover {
+  color: #63e6be !important;
+  transition: 0.3s;
+}
+
+
+/* =================================
+   REMOVE EXTRA GAP
+================================= */
+
+footer.mt-5 {
+  margin-top: 0 !important;
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  footer .container {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  footer h4 {
+    font-size: 22px;
+  }
+
+  footer h5 {
+    font-size: 19px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  footer .col-md-4 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  footer ul {
+    text-align: center;
+  }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+  footer h4 {
+    font-size: 20px;
+  }
+
+  footer h5 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer .border-top p {
+    font-size: 13px;
+  }
+
+  footer .border-top small {
+    font-size: 11px;
+  }
+}
